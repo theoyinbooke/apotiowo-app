@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Wallet, ArrowLeft, Shield, Database, Lock, UserCheck, Trash2, Mail } from 'lucide-react'
+import { ArrowLeft, Shield, Database, Lock, UserCheck, Trash2, Mail } from 'lucide-react'
 
 export default function PrivacyPolicy() {
   return (
@@ -7,10 +7,8 @@ export default function PrivacyPolicy() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#667eea] to-[#764ba2] flex items-center justify-center">
-              <Wallet className="w-5 h-5 text-white" />
-            </div>
+          <Link to="/" className="flex items-center gap-3">
+            <img src="/logo.png" alt="Apotiowo" className="w-10 h-10 rounded-xl" />
             <span className="text-xl font-semibold text-gray-900">Apotiowo</span>
           </Link>
           <Link
@@ -32,22 +30,22 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Quick Summary */}
-          <div className="bg-gradient-to-br from-[#667eea]/10 to-[#764ba2]/10 rounded-2xl p-6 mb-12">
+          <div className="bg-gradient-to-br from-[#2AA7B5]/10 to-[#1E8A96]/10 rounded-2xl p-6 mb-12">
             <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-              <Shield className="w-5 h-5 text-[#667eea]" />
+              <Shield className="w-5 h-5 text-[#2AA7B5]" />
               Quick Summary
             </h2>
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-white rounded-xl p-4">
-                <Database className="w-5 h-5 text-[#667eea] mb-2" />
+                <Database className="w-5 h-5 text-[#2AA7B5] mb-2" />
                 <p className="text-sm text-gray-700">We collect only what's needed to provide our service</p>
               </div>
               <div className="bg-white rounded-xl p-4">
-                <Lock className="w-5 h-5 text-[#667eea] mb-2" />
+                <Lock className="w-5 h-5 text-[#2AA7B5] mb-2" />
                 <p className="text-sm text-gray-700">Your data is encrypted and securely stored</p>
               </div>
               <div className="bg-white rounded-xl p-4">
-                <Trash2 className="w-5 h-5 text-[#667eea] mb-2" />
+                <Trash2 className="w-5 h-5 text-[#2AA7B5] mb-2" />
                 <p className="text-sm text-gray-700">You can delete your data at any time</p>
               </div>
             </div>
@@ -248,15 +246,15 @@ export default function PrivacyPolicy() {
                 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
               </p>
               <div className="bg-gray-50 rounded-xl p-6 mt-4 flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#667eea] flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[#2AA7B5] flex items-center justify-center flex-shrink-0">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Email</p>
-                  <a href="mailto:oyinbookeola@outlook.com" className="text-[#667eea] hover:underline">
+                  <a href="mailto:oyinbookeola@outlook.com" className="text-[#2AA7B5] hover:underline">
                     oyinbookeola@outlook.com
                   </a>
-                  <p className="text-gray-600 mt-2"><strong>Developer:</strong> Oyinbooke Olaitan</p>
+                  <p className="text-gray-600 mt-2"><strong>Developer:</strong> Olanrewaju Oyinbooke</p>
                 </div>
               </div>
             </section>
@@ -317,10 +315,8 @@ export default function PrivacyPolicy() {
       {/* Footer */}
       <footer className="py-8 px-6 bg-gray-900">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#667eea] to-[#764ba2] flex items-center justify-center">
-              <Wallet className="w-4 h-4 text-white" />
-            </div>
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Apotiowo" className="w-8 h-8 rounded-lg" />
             <span className="text-lg font-semibold text-white">Apotiowo</span>
           </div>
           <p className="text-gray-500 text-sm">2024 Apotiowo. All rights reserved.</p>

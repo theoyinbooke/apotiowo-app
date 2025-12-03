@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import {
-  Wallet,
   PieChart,
   Target,
   CreditCard,
@@ -11,7 +10,8 @@ import {
   CheckCircle,
   BarChart3,
   Calendar,
-  Bell
+  Bell,
+  Wallet
 } from 'lucide-react'
 
 const features = [
@@ -43,7 +43,7 @@ const features = [
     icon: PieChart,
     title: 'Visual Analytics',
     description: 'Understand your spending patterns with beautiful charts and budget health overviews.',
-    color: '#667eea'
+    color: '#2AA7B5'
   },
   {
     icon: Calendar,
@@ -68,10 +68,8 @@ export default function LandingPage() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#667eea] to-[#764ba2] flex items-center justify-center">
-              <Wallet className="w-5 h-5 text-white" />
-            </div>
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Apotiowo" className="w-10 h-10 rounded-xl" />
             <span className="text-xl font-semibold text-gray-900">Apotiowo</span>
           </div>
           <nav className="flex items-center gap-6">
@@ -87,7 +85,7 @@ export default function LandingPage() {
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Take Control of Your{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#667eea] to-[#764ba2]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2AA7B5] to-[#1E8A96]">
                 Finances
               </span>
             </h1>
@@ -108,7 +106,7 @@ export default function LandingPage() {
 
           {/* App Preview */}
           <div className="mt-16 relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-[#667eea]/10 to-transparent rounded-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#2AA7B5]/10 to-transparent rounded-3xl" />
             <div className="relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 md:p-12 shadow-xl">
               <div className="grid md:grid-cols-3 gap-6">
                 {/* Dashboard Preview Card */}
@@ -120,7 +118,7 @@ export default function LandingPage() {
                   <p className="text-3xl font-bold text-gray-900">$4,250.00</p>
                   <p className="text-sm text-gray-500 mt-1">Total Income</p>
                   <div className="mt-4 h-2 bg-gray-100 rounded-full overflow-hidden">
-                    <div className="h-full w-3/4 bg-gradient-to-r from-[#667eea] to-[#764ba2] rounded-full" />
+                    <div className="h-full w-3/4 bg-gradient-to-r from-[#2AA7B5] to-[#1E8A96] rounded-full" />
                   </div>
                 </div>
 
@@ -128,7 +126,7 @@ export default function LandingPage() {
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-sm text-gray-500">Budget Health</span>
-                    <CheckCircle className="w-4 h-4 text-[#667eea]" />
+                    <CheckCircle className="w-4 h-4 text-[#2AA7B5]" />
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -224,7 +222,7 @@ export default function LandingPage() {
                 ))}
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-[#667eea]/10 to-[#764ba2]/10 rounded-3xl p-8">
+            <div className="bg-gradient-to-br from-[#2AA7B5]/10 to-[#1E8A96]/10 rounded-3xl p-8">
               <div className="space-y-4">
                 <div className="bg-white rounded-xl p-4 shadow-sm flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-[#F4A087] flex items-center justify-center">
@@ -260,7 +258,7 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#667eea] to-[#764ba2]">
+      <section className="py-20 px-6 bg-gradient-to-br from-[#2AA7B5] to-[#1E8A96]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Start Your Financial Journey Today
@@ -283,10 +281,8 @@ export default function LandingPage() {
       <footer className="py-12 px-6 bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#667eea] to-[#764ba2] flex items-center justify-center">
-                <Wallet className="w-5 h-5 text-white" />
-              </div>
+            <div className="flex items-center gap-3">
+              <img src="/logo.png" alt="Apotiowo" className="w-10 h-10 rounded-xl" />
               <span className="text-xl font-semibold text-white">Apotiowo</span>
             </div>
             <nav className="flex items-center gap-6">
