@@ -4,7 +4,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function App() {
   return (
-    <BrowserRouter basename="/apotiowo-app">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
