@@ -5,7 +5,6 @@ import {
   CreditCard,
   TrendingUp,
   Shield,
-  Smartphone,
   ArrowRight,
   CheckCircle,
   BarChart3,
@@ -62,6 +61,8 @@ const benefits = [
   'Export and manage your data'
 ]
 
+const currentYear = new Date().getFullYear()
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -93,13 +94,16 @@ export default function LandingPage() {
               Apotiowo is your personal finance companion. Track budgets, manage expenses,
               set savings goals, and gain insights into your spending habits.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <a
                 href="https://apps.apple.com/app/apotiowo"
-                className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors"
+                className="inline-block hover:opacity-80 transition-opacity"
               >
-                <Smartphone className="w-5 h-5" />
-                Download on App Store
+                <img
+                  src="/appstore-badge.svg"
+                  alt="Download on the App Store"
+                  className="h-14"
+                />
               </a>
             </div>
           </div>
@@ -270,7 +274,6 @@ export default function LandingPage() {
             href="https://apps.apple.com/app/apotiowo"
             className="inline-flex items-center gap-2 bg-white text-gray-900 px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors"
           >
-            <Smartphone className="w-5 h-5" />
             Get Apotiowo
             <ArrowRight className="w-5 h-5" />
           </a>
@@ -296,7 +299,7 @@ export default function LandingPage() {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm">
-              2024 Apotiowo. All rights reserved.
+              {currentYear} Apotiowo. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-gray-500 text-sm">
               <Shield className="w-4 h-4" />

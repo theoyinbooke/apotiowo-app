@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Shield, Database, Lock, UserCheck, Trash2, Mail } from 'lucide-react'
 
+const currentYear = new Date().getFullYear()
+
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white">
@@ -26,7 +28,7 @@ export default function PrivacyPolicy() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-            <p className="text-gray-500">Last Updated: December 2, 2024</p>
+            <p className="text-gray-500">Last Updated: December 2, 2025</p>
           </div>
 
           {/* Quick Summary */}
@@ -306,7 +308,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <p className="text-center text-gray-500 text-sm mt-12">
-              This privacy policy is effective as of December 2, 2024.
+              This privacy policy is effective as of December 2, 2025.
             </p>
           </div>
         </div>
@@ -319,7 +321,7 @@ export default function PrivacyPolicy() {
             <img src="/logo.png" alt="Apotiowo" className="w-8 h-8 rounded-lg" />
             <span className="text-lg font-semibold text-white">Apotiowo</span>
           </div>
-          <p className="text-gray-500 text-sm">2024 Apotiowo. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">{currentYear} Apotiowo. All rights reserved.</p>
         </div>
       </footer>
     </div>
